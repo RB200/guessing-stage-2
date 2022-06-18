@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Guess Me Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"> </script>
+    <link rel='stylesheet' href="./static/styles.css"/>
+    
+</head>
+<body>
+   
+    
+    <div id="main-div">
+        <div class="row text-center">
+            <div class="col-sm-4 text-center">
+                <h1>GUESS ME!</h1>
+                <p>Click on the alphabets to guess the word!</p>
+            </div>
+        </div>
+        <div id="alphabet_buttons"></div>
+
+        <div class="life">
+            <div class="inner_life">
+                <span>Remaining Life:</span>
+                <span id="life-count">5</span>
+            </div>
+        </div>
+
+        <div class="hint">
+            <div class="inner_hint">
+                <span>Category is: </span>
+                <span id="category-text"></span>
+            </div>
+        </div>
+
+        <div class="blanks-container">
+            <div class="inner_blanks text-center"></div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-4 text-center">
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+    <script src="./static/script.js"></script>
+</body>
+</html>
